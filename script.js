@@ -74,4 +74,11 @@ window.addEventListener('scroll',function(){
 })
 
 
-AOS.init();
+
+$(function() {
+  AOS.init();
+});
+
+$(window).on('load', function() {
+  AOS.refresh();
+});
