@@ -72,3 +72,6 @@ window.addEventListener('scroll',function(){
   }
   scrolling = scrollTop;
 })
+
+
+AOS.init();

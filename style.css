@@ -10,6 +10,7 @@ font-family: 'Tilt Prism', sans-serif; */
 
 .mainBody {
     position: relative;
+    overflow-x:hidden ;
 }
 
 a {
