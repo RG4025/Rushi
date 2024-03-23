@@ -75,6 +75,35 @@ window.addEventListener('scroll',function(){
 
 
 
+
+const img = document.getElementById('footPrints');
+
+  const imgSrc =['https://www.iconsdb.com/icons/preview/white/left-footprint-xxl.png','https://www.iconsdb.com/icons/preview/white/right-footprint-xl.png'];
+  
+  // {
+  //   one : `https://www.iconsdb.com/icons/preview/white/left-footprint-xxl.png`,
+  //   two : `https://www.iconsdb.com/icons/preview/white/right-footprint-xl.png`
+  // }
+
+  let index = 0;
+  function toggleIMage(){
+    // img.src = imgSrc.one ? img.src = imgSrc.two : img.src = imgSrc.one;
+
+    img.src = imgSrc[index];
+    index >= 1 ? index = 0 : index++;
+
+    // img.classList.toggle('slide-in');
+  };
+
+
+  window.onload = function () {
+    setInterval(toggleIMage, 2000);
+};
+
+
+
+
+
 $(function() {
   AOS.init();
 });

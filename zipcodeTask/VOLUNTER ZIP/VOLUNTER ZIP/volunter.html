@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #impact-slider {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+        background-color: #e2e2e2ac;
+    }
+
+    .swiper-wrapper {
+        /* background-color: #e2e2e2ac; */
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+    }
+
+    .swiper-slide {
+        margin: 0 30px;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: rgba(106, 105, 105, 0.281) 0px 0px 15px 2px;
+        height: 400px;
+        width: 300px;
+        transition: transform 1s ease-in-out;
+    }
+
+
+    .swiper-slide img {
+        height: 300px;
+        width: 100%;
+        border-radius: 50%;
+
+    }
+</style>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img src="IMG/6.jpeg" alt="Highlight Image 1">
+                <h3>Sarah Thompson</h3>
+                <p>
+                    Experienced Volunteer Coordinator inspiring community service for 3+ years.</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="IMG/1.jpeg" alt="Highlight Image 2">
+                <h3>Sarah Thompson</h3>
+                <p>
+                    Experienced Volunteer Coordinator inspiring community service for 3+ years.</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="IMG/6.jpeg" alt="Highlight Image 2">
+                <h3>Sarah Thompson</h3>
+                <p>
+                    Experienced Volunteer Coordinator inspiring community service for 3+ years.</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="IMG/1.jpeg" alt="Highlight Image 2">
+                <h3>Sarah Thompson</h3>
+                <p>
+                    Experienced Volunteer Coordinator inspiring community service for 3+ years.</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="IMG/6.jpeg" alt="Highlight Image 1">
+                <h3>Sarah Thompson</h3>
+                <p>
+                    Experienced Volunteer Coordinator inspiring community service for 3+ years.</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="IMG/1.jpeg" alt="Highlight Image 1">
+                <h3>Sarah Thompson</h3>
+                <p>
+                    Experienced Volunteer Coordinator inspiring community service for 3+ years.</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="IMG/6.jpeg" alt="Highlight Image 2">
+                <h3>Sarah Thompson</h3>
+                <p>
+                    Experienced Volunteer Coordinator inspiring community service for 3+ years.</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="IMG/1.jpeg" alt="Highlight Image 2">
+                <h3>Sarah Thompson</h3>
+                <p>
+                    Experienced Volunteer Coordinator inspiring community service for 3+ years.</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="IMG/6.jpeg" alt="Highlight Image 2">
+                <h3>Sarah Thompson</h3>
+                <p>
+                    Experienced Volunteer Coordinator inspiring community service for 3+ years.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+<script>
+    var startIndex1 = 0;
+    showSlides2();
+
+    function showSlides2() {
+        var slides = document.getElementsByClassName("swiper-slide");
+
+        for (var i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        for (var i = startIndex1; i < startIndex1 + 3; i++) {
+            if (i < slides.length) {
+                slides[i].style.display = "block";
+            }
+        }
+
+        startIndex1 += 3;
+        if (startIndex1 >= slides.length) {
+            startIndex1 = 0;
+        }
+
+        setTimeout(showSlides2, 2000);
+    }</script>
+
+</html>

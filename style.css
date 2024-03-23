@@ -45,6 +45,31 @@ li {
     z-index: 999;
 }
 
+#footPrints{
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+    transition: all ease 1s;
+    animation-name: moving;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes moving {
+    from {padding: 0;}
+    to {padding: 10px;}
+  }
+
+
+#footPrints .slide-in {
+    transform: translate3d(0, 0, 0);
+    margin-top: 20px;
+    
+  }
+
+
 .secOneChild {
     width: 100%;
 
@@ -584,6 +609,7 @@ li {
 
 }
 
+
 .founderImg {
     width: 200px;
     margin: 0 auto;
@@ -713,6 +739,7 @@ li {
     transition: all ease 0.5s;
 }
 
+
 .sectionNine{
     background-color: #040637;
     color: white;
@@ -791,6 +818,7 @@ ul{
         font-weight: 700;
 
     }
+    
 
     .secThreeOne p {
         margin-left: 30px;
